@@ -1,10 +1,13 @@
 import isYes from './isYes.js';
 
-const quizButton = document.getElementById('quizbutton');
+const quizButton = document.getElementById('quiz-button');
 const total = document.getElementById('Score');
 
-quizbutton.addEventListener('click', () => {
+quizButton.addEventListener('click', () => {
     console.log('buttonworks');
+    if (count >= 1) {
+        count = 0;
+    }
     const name = prompt('What\'s your name?');
     const confirmation = confirm(`${name}, are you sure you want to take the quiz?`);
     if (confirmation === false) return;
@@ -12,6 +15,7 @@ quizbutton.addEventListener('click', () => {
     const question2 = prompt('Do I love Stere\'s?');
     const question3 = prompt('Do I love Polenta?');
     let count = 0;
+    if (count >= 1) { count = 0; }
     if (!isYes(question1)) { count++; }
     if (isYes(question2)) { count++; }
     if (!isYes(question3)) { count++; }
