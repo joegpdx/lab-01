@@ -1,9 +1,4 @@
 export default function isYes(str) {
-    // if (str === 'Yes') {
-    //     return true;
-    // } else {
-    //     return false;
-    // }
     if (str === 'Y') {
         return true;
     } else if (str.toLowerCase() === 'yes') {
@@ -14,12 +9,3 @@ export default function isYes(str) {
         return true;
     } else return false;
 }
-
-
-
-
-// if (kushdklfgh) {
-
-// } else if(str === 'yep') {
-
-// }
