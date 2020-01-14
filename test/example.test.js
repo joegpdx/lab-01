@@ -52,3 +52,13 @@ test('testing Y works', function (assert) {
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
 });
+
+test('test it gives false', function (assert) {
+    const test6 = 'No';
+
+    const expected = false;
+
+    const result = isYes(test6);
+
+    assert.equal(result, false);
+});
