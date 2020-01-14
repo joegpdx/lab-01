@@ -40,10 +40,10 @@ test('testing y works', function (assert) {
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
 });
-test('testing Y works', function (assert) {
+test('testing yes works', function (assert) {
     //Arrange
     // Set up your parameters and expectations
-    const test5 = 'Y';
+    const test5 = 'yes';
     const expected = true;
     //Act 
     // Call the function you're testing and set the result to a const
@@ -60,5 +60,5 @@ test('test it gives false', function (assert) {
 
     const result = isYes(test6);
 
-    assert.equal(result, false);
+    assert.equal(result, expected);
 });

@@ -1,7 +1,5 @@
 import isYes from './isYes.js';
 
-console.log("Hello");
-
 const quizButton = document.getElementById('quizbutton');
 const total = document.getElementById('Score');
 
