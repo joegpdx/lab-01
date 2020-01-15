@@ -14,8 +14,8 @@
         <h1>Guess The Number 1-20</h1>
     </section>
     <img src="http://placekitten.com/200/300/"><br>
-    <input id="guess-number">
-    <p>Tries remaining<span id="tries"></span></p>
+    <input type="number" id="enter-guess" min="1" max="20">
+    <p>Tries remaining<span id="tries-remaining"></span></p>
     <p>guess too high or too low<span id="high-low"></span></p>
     <p>lose and win result<span id="lose-win"></span></p>
     <div>
@@ -23,7 +23,7 @@
     </div>
     </div>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="guessing-game.js"></script>
 </body>
 
 </html>
