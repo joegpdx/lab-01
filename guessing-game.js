@@ -15,17 +15,16 @@ guessbutton.addEventListener('click', () => {
     triesremaining.textContent = tries;
 
     if (compare(Number(userInput.value), correct) === 0) {
-        result.textContent = 'win';
+        result.textContent = 'win!!!';
         guessbutton.disabled = true;
     }
-    if (compare(userInput.value, correct) === -1) {
-        lowhigh.textContent = 'tolow';
+    if (compare(Number(userInput.value), correct) === -1) {
+        lowhigh.textContent = 'Too low!';
     }
-    if (compare(userInput.value, correct) === 1) {
-        lowhigh.textContent = 'tohigh';
+    if (compare(Number(userInput.value), correct) === 1) {
+        lowhigh.textContent = 'Too High!';
     }
-    if (tries === 0 && compare(userInput.value, correct) !== 0) {
+    if (tries === 0 && compare(Number(userInput.value), correct) !== 0) {
         result.textContent = 'You Lost';
     }
-
 });
