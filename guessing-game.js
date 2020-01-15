@@ -16,6 +16,7 @@ guessbutton.addEventListener('click', () => {
 
     if (compare(Number(userInput.value), correct) === 0) {
         result.textContent = 'win!!!';
+        lowhigh.textContent = 'Correct!!';
         guessbutton.disabled = true;
     }
     if (compare(Number(userInput.value), correct) === -1) {
@@ -25,6 +26,6 @@ guessbutton.addEventListener('click', () => {
         lowhigh.textContent = 'Too High!';
     }
     if (tries === 0 && compare(Number(userInput.value), correct) !== 0) {
-        result.textContent = 'You Lost';
+        result.textContent = 'Lost';
     }
 });

@@ -16,7 +16,6 @@ test('testing 0', function (assert) {
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
 });
-
 test('testing -1', function (assert) {
     //Arrange
     // Set up your parameters and expectations
@@ -29,7 +28,6 @@ test('testing -1', function (assert) {
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
 });
-
 test('testing 1', function (assert) {
     //Arrange
     // Set up your parameters and expectations
