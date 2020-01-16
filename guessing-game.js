@@ -1,29 +1,29 @@
 import compare from '../compare.js';
 
-const triesremaining = document.getElementById('tries-remaining');
-const lowhigh = document.getElementById('lowhigh');
+const triesRemaining = document.getElementById('tries-remaining');
+const lowHigh = document.getElementById('low-high');
 const result = document.getElementById('result');
-const guessbutton = document.getElementById('guess-button');
+const guessButton = document.getElementById('guess-button');
 const userInput = document.getElementById('enter-guess');
 
 let tries = 4;
 let correct = 12;
 
 
-guessbutton.addEventListener('click', () => {
+guessButton.addEventListener('click', () => {
     tries--;
-    triesremaining.textContent = tries;
+    triesRemaining.textContent = tries;
 
     if (compare(Number(userInput.value), correct) === 0) {
         result.textContent = 'win!!!';
-        lowhigh.textContent = 'Correct!!';
-        guessbutton.disabled = true;
+        lowHigh.textContent = 'Correct!!';
+        guessButton.disabled = true;
     }
     if (compare(Number(userInput.value), correct) === -1) {
-        lowhigh.textContent = 'Too low!';
+        lowHigh.textContent = 'Too low!';
     }
     if (compare(Number(userInput.value), correct) === 1) {
-        lowhigh.textContent = 'Too High!';
+        lowHigh.textContent = 'Too High!';
     }
     if (tries === 0 && compare(Number(userInput.value), correct) !== 0) {
         result.textContent = 'Lost';
